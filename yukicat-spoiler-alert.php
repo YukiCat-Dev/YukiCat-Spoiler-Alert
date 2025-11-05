@@ -204,65 +204,12 @@ class YukiCat_Spoiler_Alert {
         
         // 使用 register_block_type_from_metadata 从 block.json 注册
         // 这是WordPress推荐的方式
+        // 注意：不使用 render_callback，因为 save.js 已经生成了静态HTML
         register_block_type(YUKICAT_SPOILER_PLUGIN_DIR . 'build/block.json', array(
             'editor_script' => 'yukicat-spoiler-block-editor',
             'editor_style' => 'yukicat-spoiler-block-editor-style',
-            'style' => 'yukicat-spoiler-block-style',
-            'render_callback' => array($this, 'render_block')
+            'style' => 'yukicat-spoiler-block-style'
         ));
-    }
-    
-    /**
-     * 渲染区块
-     */
-    public function render_block($attributes, $content) {
-        $title = isset($attributes['title']) ? esc_html($attributes['title']) : $this->get_default_title();
-        $button_show = isset($attributes['buttonShow']) ? esc_html($attributes['buttonShow']) : $this->get_default_button_show();
-        $button_hide = isset($attributes['buttonHide']) ? esc_html($attributes['buttonHide']) : $this->get_default_button_hide();
-        $theme = isset($attributes['theme']) ? esc_attr($attributes['theme']) : 'warning';
-        
-        // 验证主题
-        $valid_themes = array('warning', 'danger', 'snow', 'paw');
-        if (!in_array($theme, $valid_themes)) {
-            $theme = 'warning';
-        }
-        
-        // 生成唯一ID
-        $unique_id = 'spoiler-' . uniqid();
-        
-        // 生成HTML
-        return sprintf(
-            '<div class="yukicat-spoiler yukicat-spoiler-theme-%s" data-theme="%s">
-                <div class="yukicat-spoiler-header">
-                    <span class="yukicat-spoiler-icon">%s</span>
-                    <span class="yukicat-spoiler-title">%s</span>
-                    <button class="yukicat-spoiler-toggle" 
-                            data-target="%s" 
-                            data-show-text="%s" 
-                            data-hide-text="%s"
-                            aria-expanded="false"
-                            aria-controls="%s">
-                        %s
-                    </button>
-                </div>
-                <div class="yukicat-spoiler-content" id="%s" aria-hidden="true">
-                    <div class="yukicat-spoiler-content-inner">
-                        %s
-                    </div>
-                </div>
-            </div>',
-            $theme,
-            $theme,
-            $this->get_theme_icon($theme),
-            $title,
-            $unique_id,
-            esc_attr($button_show),
-            esc_attr($button_hide),
-            $unique_id,
-            $button_show,
-            $unique_id,
-            $content
-        );
     }
     
     /**
