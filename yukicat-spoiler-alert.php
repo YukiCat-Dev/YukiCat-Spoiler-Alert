@@ -161,6 +161,10 @@ class YukiCat_Spoiler_Alert {
         $asset_file = YUKICAT_SPOILER_PLUGIN_DIR . 'build/index.asset.php';
         
         if (!file_exists($asset_file)) {
+            // 调试信息：如果文件不存在
+            if (defined('WP_DEBUG') && WP_DEBUG) {
+                error_log('YukiCat Spoiler Alert: build/index.asset.php not found at ' . $asset_file);
+            }
             return;
         }
         
@@ -174,6 +178,13 @@ class YukiCat_Spoiler_Alert {
             $asset['version'],
             true
         );
+        
+        // 传递默认文本到编辑器（必须在脚本注册之后，register_block_type之前）
+        wp_localize_script('yukicat-spoiler-block-editor', 'yukicatSpoilerDefaults', array(
+            'title' => $this->get_default_title(),
+            'buttonShow' => $this->get_default_button_show(),
+            'buttonHide' => $this->get_default_button_hide()
+        ));
         
         // 注册区块样式（编辑器和前端共用）
         wp_register_style(
@@ -191,19 +202,13 @@ class YukiCat_Spoiler_Alert {
             YUKICAT_SPOILER_VERSION
         );
         
-        // 注册区块类型
-        register_block_type('yukicat/spoiler-alert', array(
+        // 使用 register_block_type_from_metadata 从 block.json 注册
+        // 这是WordPress推荐的方式
+        register_block_type(YUKICAT_SPOILER_PLUGIN_DIR . 'build/block.json', array(
             'editor_script' => 'yukicat-spoiler-block-editor',
             'editor_style' => 'yukicat-spoiler-block-editor-style',
             'style' => 'yukicat-spoiler-block-style',
             'render_callback' => array($this, 'render_block')
-        ));
-        
-        // 传递默认文本到编辑器
-        wp_localize_script('yukicat-spoiler-block-editor', 'yukicatSpoilerDefaults', array(
-            'title' => $this->get_default_title(),
-            'buttonShow' => $this->get_default_button_show(),
-            'buttonHide' => $this->get_default_button_hide()
         ));
     }
     
