@@ -1,0 +1,81 @@
+# Copyright (C) 2025 YukiCat
+# This file is distributed under the same license as the YukiCat Spoiler Alert plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: YukiCat Spoiler Alert 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/yukicat-spoiler-alert\n"
+"POT-Creation-Date: 2025-11-05 12:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: yukicat-spoiler-alert.php
+msgid "Spoiler Warning"
+msgstr ""
+
+#: yukicat-spoiler-alert.php
+msgid "Click to reveal"
+msgstr ""
+
+#: yukicat-spoiler-alert.php
+msgid "Collapse content"
+msgstr ""
+
+#: src/edit.js
+msgid "⚠️ Warning (Yellow)"
+msgstr ""
+
+#: src/edit.js
+msgid "🚫 Danger (Red)"
+msgstr ""
+
+#: src/edit.js
+msgid "❄️ Snow (Blue)"
+msgstr ""
+
+#: src/edit.js
+msgid "🐾 Paw (Orange)"
+msgstr ""
+
+#: src/edit.js
+msgid "Spoiler Settings"
+msgstr ""
+
+#: src/edit.js
+msgid "Warning Title"
+msgstr ""
+
+#: src/edit.js
+msgid "The title shown in the warning header"
+msgstr ""
+
+#: src/edit.js
+msgid "Show Button Text"
+msgstr ""
+
+#: src/edit.js
+msgid "Text for the expand button"
+msgstr ""
+
+#: src/edit.js
+msgid "Hide Button Text"
+msgstr ""
+
+#: src/edit.js
+msgid "Text for the collapse button"
+msgstr ""
+
+#: src/edit.js
+msgid "Theme Style"
+msgstr ""
+
+#: src/edit.js
+msgid "Choose a visual theme for the spoiler"
+msgstr ""
+
+#: src/edit.js
+msgid "Add spoiler content blocks here..."
+msgstr ""

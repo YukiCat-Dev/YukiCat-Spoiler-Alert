@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yukicat/spoiler-alert",
+  "version": "1.0.0",
+  "title": "Spoiler Alert",
+  "category": "design",
+  "icon": "warning",
+  "description": "Hide spoiler content with a warning and reveal button.",
+  "keywords": ["spoiler", "alert", "warning", "collapse"],
+  "textdomain": "yukicat-spoiler-alert",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonShow": {
+      "type": "string",
+      "default": ""
+    },
+    "buttonHide": {
+      "type": "string",
+      "default": ""
+    },
+    "theme": {
+      "type": "string",
+      "default": "warning",
+      "enum": ["warning", "danger", "snow", "paw"]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

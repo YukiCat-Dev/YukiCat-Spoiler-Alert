@@ -1,0 +1,66 @@
+# Copyright (C) 2025 YukiCat
+# This file is distributed under the same license as the YukiCat Spoiler Alert plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: YukiCat Spoiler Alert 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/yukicat-spoiler-alert\n"
+"POT-Creation-Date: 2025-11-05 12:00:00+00:00\n"
+"PO-Revision-Date: 2025-11-05 12:00:00+00:00\n"
+"Last-Translator: YukiCat\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Spoiler Warning"
+msgstr "Spoiler Warning"
+
+msgid "Click to reveal"
+msgstr "Click to reveal"
+
+msgid "Collapse content"
+msgstr "Collapse content"
+
+msgid "⚠️ Warning (Yellow)"
+msgstr "⚠️ Warning (Yellow)"
+
+msgid "🚫 Danger (Red)"
+msgstr "🚫 Danger (Red)"
+
+msgid "❄️ Snow (Blue)"
+msgstr "❄️ Snow (Blue)"
+
+msgid "🐾 Paw (Orange)"
+msgstr "🐾 Paw (Orange)"
+
+msgid "Spoiler Settings"
+msgstr "Spoiler Settings"
+
+msgid "Warning Title"
+msgstr "Warning Title"
+
+msgid "The title shown in the warning header"
+msgstr "The title shown in the warning header"
+
+msgid "Show Button Text"
+msgstr "Show Button Text"
+
+msgid "Text for the expand button"
+msgstr "Text for the expand button"
+
+msgid "Hide Button Text"
+msgstr "Hide Button Text"
+
+msgid "Text for the collapse button"
+msgstr "Text for the collapse button"
+
+msgid "Theme Style"
+msgstr "Theme Style"
+
+msgid "Choose a visual theme for the spoiler"
+msgstr "Choose a visual theme for the spoiler"
+
+msgid "Add spoiler content blocks here..."
+msgstr "Add spoiler content blocks here..."

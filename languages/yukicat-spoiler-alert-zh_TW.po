@@ -1,0 +1,66 @@
+# Copyright (C) 2025 YukiCat
+# This file is distributed under the same license as the YukiCat Spoiler Alert plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: YukiCat Spoiler Alert 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/yukicat-spoiler-alert\n"
+"POT-Creation-Date: 2025-11-05 12:00:00+00:00\n"
+"PO-Revision-Date: 2025-11-05 12:00:00+00:00\n"
+"Last-Translator: YukiCat\n"
+"Language-Team: Chinese (Traditional)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Spoiler Warning"
+msgstr "劇透警告"
+
+msgid "Click to reveal"
+msgstr "點擊查看劇透內容"
+
+msgid "Collapse content"
+msgstr "收起內容"
+
+msgid "⚠️ Warning (Yellow)"
+msgstr "⚠️ 警告（黃色）"
+
+msgid "🚫 Danger (Red)"
+msgstr "🚫  危險（紅色）"
+
+msgid "❄️ Snow (Blue)"
+msgstr "❄️ 雪花（藍色）"
+
+msgid "🐾 Paw (Orange)"
+msgstr "🐾 貓爪（橙色）"
+
+msgid "Spoiler Settings"
+msgstr "劇透設定"
+
+msgid "Warning Title"
+msgstr "警告標題"
+
+msgid "The title shown in the warning header"
+msgstr "在警告頭部顯示的標題"
+
+msgid "Show Button Text"
+msgstr "展開按鈕文字"
+
+msgid "Text for the expand button"
+msgstr "展開按鈕的文字內容"
+
+msgid "Hide Button Text"
+msgstr "收起按鈕文字"
+
+msgid "Text for the collapse button"
+msgstr "收起按鈕的文字內容"
+
+msgid "Theme Style"
+msgstr "主題樣式"
+
+msgid "Choose a visual theme for the spoiler"
+msgstr "選擇劇透警告的視覺主題"
+
+msgid "Add spoiler content blocks here..."
+msgstr "在此新增劇透內容區塊..."
